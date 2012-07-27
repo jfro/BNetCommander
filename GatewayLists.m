@@ -13,19 +13,21 @@
 @implementation GatewayLists
 #pragma mark Initialization
 - (id)init {
-	[super init];
-	W3gateways = [[NSMutableArray alloc] init];
-	SCgateways = [[NSMutableArray alloc] init];
-	D2gateways = [[NSMutableArray alloc] init];
-	hasSC = NO;
-	changedSC = NO;
-	portLong = 0;
-	changedport = NO;
-	hasD2 = NO;
-	changedD2 = NO;
-	hasW3 = NO;
-	changedW3 = NO;
-	[self loadResourceData];
+	self = [super init];
+    if(self) {
+        W3gateways = [[NSMutableArray alloc] init];
+        SCgateways = [[NSMutableArray alloc] init];
+        D2gateways = [[NSMutableArray alloc] init];
+        hasSC = NO;
+        changedSC = NO;
+        portLong = 0;
+        changedport = NO;
+        hasD2 = NO;
+        changedD2 = NO;
+        hasW3 = NO;
+        changedW3 = NO;
+        [self loadResourceData];
+    }
 	return self;
 }
 
@@ -294,7 +296,7 @@ NSLog(@"%@", NSFileTypeForHFSTypeCode(type));
 	[localHeader appendData:[aHeader subdataWithRange:headerRange1]];
 
 	NSString* tempStr = [[NSString alloc] initWithFormat: @"%02d", defZoneNumber];
-	[localHeader appendBytes:[tempStr cString] length:[tempStr cStringLength]+1];
+	[localHeader appendBytes:[tempStr UTF8String] length:[tempStr lengthOfBytesUsingEncoding:NSUTF8StringEncoding]+1];
 	[tempStr release];
 	
 	//old  0000 0007 3130 3031 0030 3500
@@ -324,7 +326,7 @@ NSLog(@"%@", NSFileTypeForHFSTypeCode(type));
 		//NSLog(@"Data Successfully saved! For: %i",theId);
 		// need to protect resource so that It cannot be modified by the Battle.Net client software
 		// we'll only do this for Starcraft as that is the one known to have this problem
-		if(aName = kSCRegPath) {
+		if(aName == kSCRegPath) {
 			resourceAtt |= resLocked;
 			if(![aFork setAttributeFlags:resourceAtt forResourceType:type Id:theId]) {
 				//NSLog(@"Lock of Resource failed!! Will let code continue and see what happens: %@",aName);

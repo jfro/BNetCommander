@@ -11,35 +11,44 @@
 
 @implementation BNGateway
 - (id)init {
-	//[super init];
-	[self initWithName:[[NSString alloc] init]];
+	self = [self initWithName:[[NSString alloc] init]];
+    if(self) {
+        
+    }
 	return self;
 }
 
 - (id)initWithName:(NSString *)newName {
-	//[super init];
-	[self initWithName:newName address:[NSString stringWithString:@""]];
+	self = [self initWithName:newName address:[NSString stringWithString:@""]];
+    if(self) {
+        
+    }
 	return self;
 }
 - (id)initWithName:(NSString *)newName address:(NSString *)newAddr {
-	[self initWithName:newName address:newAddr zone:0 vdefault:NO];
+	self = [self initWithName:newName address:newAddr zone:0 vdefault:NO];
+    if(self) {
+        
+    }
 	return self;
 }
 - (id)initWithName:(NSString *)newName address:(NSString *)newAddr zone:(int)newZone {
-	[super init];
-	
-	name = [newName retain];
-	address = [newAddr retain];
-	zone = newZone;
+	self = [super init];
+    if(self) {
+        name = [newName retain];
+        address = [newAddr retain];
+        zone = newZone;
+    }
 	return self;
 }
 - (id)initWithName:(NSString *)newName address:(NSString *)newAddr zone:(int)newZone vdefault:(BOOL)newDefault {
-	[super init];
-	
-	name = [newName retain];
-	address = [newAddr retain];
-	zone = newZone;
-	vdefault = NO;
+	self = [super init];
+	if(self) {
+        name = [newName retain];
+        address = [newAddr retain];
+        zone = newZone;
+        vdefault = NO;
+    }
 	return self;
 }
 
@@ -50,7 +59,9 @@
 }
 
 - (void)setName:(NSString *)newName {
-	name = [newName retain];
+    [newName retain];
+    [name release];
+	name = newName;
 }
 
 - (NSString *)name {
@@ -58,7 +69,9 @@
 }
 
 - (void)setAddress:(NSString *)newAddr {
-	address = [newAddr retain];
+    [newAddr retain];
+    [address release];
+	address = newAddr;
 }
 
 - (NSString *)address {

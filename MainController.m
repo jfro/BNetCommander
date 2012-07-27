@@ -18,7 +18,7 @@
 }
 
 - (void)awakeFromNib {
-	OSType appType = NULL;
+	OSType appType = kLSUnknownCreator;
 	CFURLRef appURL;
 	NSString *appName = @"Warcraft III.app";
 	OSStatus errNo = LSFindApplicationForInfo(appType, NULL, (CFStringRef)appName, NULL, &appURL);
