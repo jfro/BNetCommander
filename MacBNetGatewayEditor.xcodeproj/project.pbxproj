@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		025718DE0657F9D300B43342 /* MainController.h in Headers */ = {isa = PBXBuildFile; fileRef = 025718DC0657F9D300B43342 /* MainController.h */; };
+		025718DF0657F9D300B43342 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025718DD0657F9D300B43342 /* MainController.m */; };
+		025719110658054200B43342 /* GatewayLists.h in Headers */ = {isa = PBXBuildFile; fileRef = 0257190F0658054200B43342 /* GatewayLists.h */; };
+		025719120658054200B43342 /* GatewayLists.m in Sources */ = {isa = PBXBuildFile; fileRef = 025719100658054200B43342 /* GatewayLists.m */; };
+		025719210658065900B43342 /* BNGateway.h in Headers */ = {isa = PBXBuildFile; fileRef = 0257191F0658065900B43342 /* BNGateway.h */; };
+		025719220658065900B43342 /* BNGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 025719200658065900B43342 /* BNGateway.m */; };
+		02571A17065813C400B43342 /* ErrorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 02571A15065813C400B43342 /* ErrorController.h */; };
+		02571A18065813C400B43342 /* ErrorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02571A16065813C400B43342 /* ErrorController.m */; };
+		027728F0072205FA002EB212 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 027728EE072205FA002EB212 /* Credits.rtf */; };
+		02BC5574065EE46200DAC1DA /* MacBNetEditor.icns in Resources */ = {isa = PBXBuildFile; fileRef = 02BC5573065EE46200DAC1DA /* MacBNetEditor.icns */; };
+		8D1107280486CEB800E47090 /* MacBNetGatewayEditor_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* MacBNetGatewayEditor_Prefix.pch */; };
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		E037793D06DC8BCA00EB0E50 /* NDResourceFork.h in Headers */ = {isa = PBXBuildFile; fileRef = E037792D06DC8BCA00EB0E50 /* NDResourceFork.h */; };
+		E037793E06DC8BCA00EB0E50 /* NDResourceFork.m in Sources */ = {isa = PBXBuildFile; fileRef = E037792E06DC8BCA00EB0E50 /* NDResourceFork.m */; };
+		E037793F06DC8BCA00EB0E50 /* NDResourceFork+OtherSorces.h in Headers */ = {isa = PBXBuildFile; fileRef = E037792F06DC8BCA00EB0E50 /* NDResourceFork+OtherSorces.h */; };
+		E037794006DC8BCA00EB0E50 /* NDResourceFork+OtherSorces.m in Sources */ = {isa = PBXBuildFile; fileRef = E037793006DC8BCA00EB0E50 /* NDResourceFork+OtherSorces.m */; };
+		E037794106DC8BCA00EB0E50 /* NDResourceFork+PascalStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = E037793106DC8BCA00EB0E50 /* NDResourceFork+PascalStrings.h */; };
+		E037794206DC8BCA00EB0E50 /* NDResourceFork+PascalStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = E037793206DC8BCA00EB0E50 /* NDResourceFork+PascalStrings.m */; };
+		E037794306DC8BCA00EB0E50 /* NDResourceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E037793306DC8BCA00EB0E50 /* NDResourceInfo.h */; };
+		E037794406DC8BCA00EB0E50 /* NDResourceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E037793406DC8BCA00EB0E50 /* NDResourceInfo.m */; };
+		E037794506DC8BCA00EB0E50 /* NSString+CarbonUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E037793506DC8BCA00EB0E50 /* NSString+CarbonUtilities.h */; };
+		E037794606DC8BCA00EB0E50 /* NSString+CarbonUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E037793606DC8BCA00EB0E50 /* NSString+CarbonUtilities.m */; };
+		E037794706DC8BCA00EB0E50 /* NSString+NDCarbonUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E037793706DC8BCA00EB0E50 /* NSString+NDCarbonUtilities.h */; };
+		E037794806DC8BCA00EB0E50 /* NSString+NDCarbonUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E037793806DC8BCA00EB0E50 /* NSString+NDCarbonUtilities.m */; };
+		E037794906DC8BCA00EB0E50 /* NSString+NDUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E037793906DC8BCA00EB0E50 /* NSString+NDUtilities.h */; };
+		E037794A06DC8BCA00EB0E50 /* NSString+NDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E037793A06DC8BCA00EB0E50 /* NSString+NDUtilities.m */; };
+		E037794B06DC8BCA00EB0E50 /* NSURL+NDCarbonUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E037793B06DC8BCA00EB0E50 /* NSURL+NDCarbonUtilities.h */; };
+		E037794C06DC8BCA00EB0E50 /* NSURL+NDCarbonUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E037793C06DC8BCA00EB0E50 /* NSURL+NDCarbonUtilities.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		02F6D8DF0C78E4840050355E /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		025718DC0657F9D300B43342 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		025718DD0657F9D300B43342 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		0257190F0658054200B43342 /* GatewayLists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GatewayLists.h; sourceTree = "<group>"; };
+		025719100658054200B43342 /* GatewayLists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GatewayLists.m; sourceTree = "<group>"; };
+		0257191F0658065900B43342 /* BNGateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNGateway.h; sourceTree = "<group>"; };
+		025719200658065900B43342 /* BNGateway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNGateway.m; sourceTree = "<group>"; };
+		02571A15065813C400B43342 /* ErrorController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ErrorController.h; sourceTree = "<group>"; };
+		02571A16065813C400B43342 /* ErrorController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ErrorController.m; sourceTree = "<group>"; };
+		027728EF072205FA002EB212 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		02BC5573065EE46200DAC1DA /* MacBNetEditor.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = MacBNetEditor.icns; sourceTree = "<group>"; };
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* MacBNetGatewayEditor_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacBNetGatewayEditor_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* BNetCommander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BNetCommander.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E037792D06DC8BCA00EB0E50 /* NDResourceFork.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NDResourceFork.h; sourceTree = "<group>"; };
+		E037792E06DC8BCA00EB0E50 /* NDResourceFork.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NDResourceFork.m; sourceTree = "<group>"; };
+		E037792F06DC8BCA00EB0E50 /* NDResourceFork+OtherSorces.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NDResourceFork+OtherSorces.h"; sourceTree = "<group>"; };
+		E037793006DC8BCA00EB0E50 /* NDResourceFork+OtherSorces.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NDResourceFork+OtherSorces.m"; sourceTree = "<group>"; };
+		E037793106DC8BCA00EB0E50 /* NDResourceFork+PascalStrings.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NDResourceFork+PascalStrings.h"; sourceTree = "<group>"; };
+		E037793206DC8BCA00EB0E50 /* NDResourceFork+PascalStrings.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NDResourceFork+PascalStrings.m"; sourceTree = "<group>"; };
+		E037793306DC8BCA00EB0E50 /* NDResourceInfo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NDResourceInfo.h; sourceTree = "<group>"; };
+		E037793406DC8BCA00EB0E50 /* NDResourceInfo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NDResourceInfo.m; sourceTree = "<group>"; };
+		E037793506DC8BCA00EB0E50 /* NSString+CarbonUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSString+CarbonUtilities.h"; sourceTree = "<group>"; };
+		E037793606DC8BCA00EB0E50 /* NSString+CarbonUtilities.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSString+CarbonUtilities.m"; sourceTree = "<group>"; };
+		E037793706DC8BCA00EB0E50 /* NSString+NDCarbonUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSString+NDCarbonUtilities.h"; sourceTree = "<group>"; };
+		E037793806DC8BCA00EB0E50 /* NSString+NDCarbonUtilities.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSString+NDCarbonUtilities.m"; sourceTree = "<group>"; };
+		E037793906DC8BCA00EB0E50 /* NSString+NDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSString+NDUtilities.h"; sourceTree = "<group>"; };
+		E037793A06DC8BCA00EB0E50 /* NSString+NDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSString+NDUtilities.m"; sourceTree = "<group>"; };
+		E037793B06DC8BCA00EB0E50 /* NSURL+NDCarbonUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSURL+NDCarbonUtilities.h"; sourceTree = "<group>"; };
+		E037793C06DC8BCA00EB0E50 /* NSURL+NDCarbonUtilities.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSURL+NDCarbonUtilities.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0257198C06580AB900B43342 /* NDResource */ = {
+			isa = PBXGroup;
+			children = (
+				E037792D06DC8BCA00EB0E50 /* NDResourceFork.h */,
+				E037792E06DC8BCA00EB0E50 /* NDResourceFork.m */,
+				E037792F06DC8BCA00EB0E50 /* NDResourceFork+OtherSorces.h */,
+				E037793006DC8BCA00EB0E50 /* NDResourceFork+OtherSorces.m */,
+				E037793106DC8BCA00EB0E50 /* NDResourceFork+PascalStrings.h */,
+				E037793206DC8BCA00EB0E50 /* NDResourceFork+PascalStrings.m */,
+				E037793306DC8BCA00EB0E50 /* NDResourceInfo.h */,
+				E037793406DC8BCA00EB0E50 /* NDResourceInfo.m */,
+				E037793506DC8BCA00EB0E50 /* NSString+CarbonUtilities.h */,
+				E037793606DC8BCA00EB0E50 /* NSString+CarbonUtilities.m */,
+				E037793706DC8BCA00EB0E50 /* NSString+NDCarbonUtilities.h */,
+				E037793806DC8BCA00EB0E50 /* NSString+NDCarbonUtilities.m */,
+				E037793906DC8BCA00EB0E50 /* NSString+NDUtilities.h */,
+				E037793A06DC8BCA00EB0E50 /* NSString+NDUtilities.m */,
+				E037793B06DC8BCA00EB0E50 /* NSURL+NDCarbonUtilities.h */,
+				E037793C06DC8BCA00EB0E50 /* NSURL+NDCarbonUtilities.m */,
+			);
+			name = NDResource;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0257198C06580AB900B43342 /* NDResource */,
+				025718DC0657F9D300B43342 /* MainController.h */,
+				025718DD0657F9D300B43342 /* MainController.m */,
+				02571A15065813C400B43342 /* ErrorController.h */,
+				02571A16065813C400B43342 /* ErrorController.m */,
+				0257190F0658054200B43342 /* GatewayLists.h */,
+				025719100658054200B43342 /* GatewayLists.m */,
+				0257191F0658065900B43342 /* BNGateway.h */,
+				025719200658065900B43342 /* BNGateway.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* BNetCommander.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* MacBNetGatewayEditor */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = MacBNetGatewayEditor;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MacBNetGatewayEditor_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				027728EE072205FA002EB212 /* Credits.rtf */,
+				02BC5573065EE46200DAC1DA /* MacBNetEditor.icns */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D1107270486CEB800E47090 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1107280486CEB800E47090 /* MacBNetGatewayEditor_Prefix.pch in Headers */,
+				025718DE0657F9D300B43342 /* MainController.h in Headers */,
+				025719110658054200B43342 /* GatewayLists.h in Headers */,
+				025719210658065900B43342 /* BNGateway.h in Headers */,
+				02571A17065813C400B43342 /* ErrorController.h in Headers */,
+				E037793D06DC8BCA00EB0E50 /* NDResourceFork.h in Headers */,
+				E037793F06DC8BCA00EB0E50 /* NDResourceFork+OtherSorces.h in Headers */,
+				E037794106DC8BCA00EB0E50 /* NDResourceFork+PascalStrings.h in Headers */,
+				E037794306DC8BCA00EB0E50 /* NDResourceInfo.h in Headers */,
+				E037794506DC8BCA00EB0E50 /* NSString+CarbonUtilities.h in Headers */,
+				E037794706DC8BCA00EB0E50 /* NSString+NDCarbonUtilities.h in Headers */,
+				E037794906DC8BCA00EB0E50 /* NSString+NDUtilities.h in Headers */,
+				E037794B06DC8BCA00EB0E50 /* NSURL+NDCarbonUtilities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* BNetCommander */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C431A40999B31200E3A94B /* Build configuration list for PBXNativeTarget "BNetCommander" */;
+			buildPhases = (
+				8D1107270486CEB800E47090 /* Headers */,
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				02F6D8DF0C78E4840050355E /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			comments = "Edits Battle.Net preferences allowing the server list to be edited.";
+			dependencies = (
+			);
+			name = BNetCommander;
+			productInstallPath = "$(HOME)/Applications";
+			productName = MacBNetGatewayEditor;
+			productReference = 8D1107320486CEB800E47090 /* BNetCommander.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 02C431A80999B31200E3A94B /* Build configuration list for PBXProject "MacBNetGatewayEditor" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* MacBNetGatewayEditor */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* BNetCommander */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				02BC5574065EE46200DAC1DA /* MacBNetEditor.icns in Resources */,
+				027728F0072205FA002EB212 /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				025718DF0657F9D300B43342 /* MainController.m in Sources */,
+				025719120658054200B43342 /* GatewayLists.m in Sources */,
+				025719220658065900B43342 /* BNGateway.m in Sources */,
+				02571A18065813C400B43342 /* ErrorController.m in Sources */,
+				E037793E06DC8BCA00EB0E50 /* NDResourceFork.m in Sources */,
+				E037794006DC8BCA00EB0E50 /* NDResourceFork+OtherSorces.m in Sources */,
+				E037794206DC8BCA00EB0E50 /* NDResourceFork+PascalStrings.m in Sources */,
+				E037794406DC8BCA00EB0E50 /* NDResourceInfo.m in Sources */,
+				E037794606DC8BCA00EB0E50 /* NSString+CarbonUtilities.m in Sources */,
+				E037794806DC8BCA00EB0E50 /* NSString+NDCarbonUtilities.m in Sources */,
+				E037794A06DC8BCA00EB0E50 /* NSString+NDUtilities.m in Sources */,
+				E037794C06DC8BCA00EB0E50 /* NSURL+NDCarbonUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		027728EE072205FA002EB212 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				027728EF072205FA002EB212 /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02C431A50999B31200E3A94B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MacBNetGatewayEditor_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = BNetCommander;
+				SECTORDER_FLAGS = "";
+				VERSIONING_SYSTEM = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		02C431A60999B31200E3A94B /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../Cocoa/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MacBNetGatewayEditor_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = BNetCommander;
+				SECTORDER_FLAGS = "";
+				VERSIONING_SYSTEM = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		02C431A70999B31200E3A94B /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../Frameworks\"";
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MacBNetGatewayEditor_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = BNetCommander;
+				SECTORDER_FLAGS = "";
+				VERSIONING_SYSTEM = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		02C431A90999B31200E3A94B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		02C431AA0999B31200E3A94B /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+		02C431AB0999B31200E3A94B /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02C431A40999B31200E3A94B /* Build configuration list for PBXNativeTarget "BNetCommander" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C431A50999B31200E3A94B /* Development */,
+				02C431A60999B31200E3A94B /* Deployment */,
+				02C431A70999B31200E3A94B /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		02C431A80999B31200E3A94B /* Build configuration list for PBXProject "MacBNetGatewayEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C431A90999B31200E3A94B /* Development */,
+				02C431AA0999B31200E3A94B /* Deployment */,
+				02C431AB0999B31200E3A94B /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

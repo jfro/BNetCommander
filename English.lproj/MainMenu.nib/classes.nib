@@ -1,0 +1,48 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {closeError = id; }; 
+            CLASS = ErrorController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {errorDesc = id; errorSheet = id; errorTitle = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = GDOutlineView; LANGUAGE = ObjC; SUPERCLASS = NSOutlineView; }, 
+        {
+            CLASS = GatewayEditorController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                contentView = NSView; 
+                dragView = NSView; 
+                firstSplit = RBSplitSubview; 
+                mainSplitView = RBSplitView; 
+                secondSplit = RBSplitSubview; 
+                sourceListView = NSView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                addGateway = id; 
+                moveGatewayDown = id; 
+                moveGatewayUp = id; 
+                removeGateway = id; 
+                saveGateways = id; 
+                vdefaultButtonChecked = id; 
+            }; 
+            CLASS = MainController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                err = id; 
+                gamedataportScreen = id; 
+                gatewayTable = id; 
+                gatewayView = id; 
+                mainWindow = id; 
+                tabView = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
